@@ -109,15 +109,13 @@ editMenu.add_command(label = "Redo",command=redo_)
 
 fontMenu = Menu(menu) 
 menu.add_cascade(label="Fonts",menu=fontMenu)
-helvetica=IntVar() 
-courier=IntVar()
-fontMenu.add_checkbutton(label="FreestyleScript", variable=courier, command=FontFreestyleScript)
-fontMenu.add_checkbutton(label="Courier", variable=courier, command=FontCourier)
-fontMenu.add_checkbutton(label="Times New Roman", variable=helvetica, command=FontTimes)  
-fontMenu.add_checkbutton(label="Arial", variable=helvetica, command=FontArial)  
-fontMenu.add_checkbutton(label="Chiller", variable=helvetica, command=FontChiller)
-fontMenu.add_checkbutton(label="EdwardianScriptITC", variable=courier, command=FontEdwardianScriptITC)
-fontMenu.add_checkbutton(label="Corbel", variable=courier, command= FontCorbel)
+fontMenu.add_checkbutton(label="FreestyleScript",command=FontFreestyleScript)
+fontMenu.add_checkbutton(label="Courier",command=FontCourier)
+fontMenu.add_checkbutton(label="Times New Roman",command=FontTimes)  
+fontMenu.add_checkbutton(label="Arial",command=FontArial)  
+fontMenu.add_checkbutton(label="Chiller",command=FontChiller)
+fontMenu.add_checkbutton(label="EdwardianScriptITC",command=FontEdwardianScriptITC)
+fontMenu.add_checkbutton(label="Corbel",command= FontCorbel)
 
 
 
